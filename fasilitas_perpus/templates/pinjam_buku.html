@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinjam Buku</title>
+</head>
+<body>
+    <h1>Pinjam Buku</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="judul">Judul Buku:</label><br>
+        <input type="text" id="judul" name="judul"><br>
+        <label for="pengarang_id">ID Pengarang:</label><br>
+        <input type="text" id="pengarang_id" name="pengarang_id"><br>
+        <label for="penerbit_id">ID Penerbit:</label><br>
+        <input type="text" id="penerbit_id" name="penerbit_id"><br>
+        <label for="rak_id">ID Rak:</label><br>
+        <input type="text" id="rak_id" name="rak_id"><br>
+        <label for="tanggal_pinjam">Tanggal Pinjam:</label><br>
+        <input type="date" id="tanggal_pinjam" name="tanggal_pinjam"><br>
+        <label for="tanggal_kembali">Tanggal Kembali:</label><br>
+        <input type="date" id="tanggal_kembali" name="tanggal_kembali"><br>
+        <button type="submit">Pinjam</button>
+    </form>
+</body>
+</html>

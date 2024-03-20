@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa</title>
+</head>
+<body>
+    <h1>Pendaftaran Mahasiswa</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br>
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat"></textarea><br>
+        <label for="nomor_telepon">Nomor Telepon:</label><br>
+        <input type="text" id="nomor_telepon" name="nomor_telepon"><br>
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>
